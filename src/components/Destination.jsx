@@ -10,6 +10,10 @@ function Destination() {
         </li>
     ));
 
+    function getImageUrl(img) {
+        return new URL(`../assets/img/${img}`, import.meta.url).href
+    }
+
     return (
         <div>
             <div className="bg-image bg-destination kenburns-bottom-right"/>
@@ -18,7 +22,7 @@ function Destination() {
                     <div className="heading-5 destination-title">
                         <span className="destination-heading-span">01</span> Pick your destination
                     </div>
-                    <img className="planet-img" src={`../src/assets/img/${planet.img}`} width="445" height="445"
+                    <img className="planet-img" src={getImageUrl(planet.img)} width="445" height="445"
                          alt="moon"></img>
                 </div>
                 <div className="planet-content">
