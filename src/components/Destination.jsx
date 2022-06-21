@@ -23,7 +23,7 @@ function Destination() {
                         <span className="destination-heading-span">01</span> Pick your destination
                     </div>
                     <img className="planet-img" src={getImageUrl(planet.img)} width="445" height="445"
-                         alt="moon"></img>
+                         alt={planet.name}></img>
                 </div>
                 <div className="planet-content">
                     <div className="planet-menu">

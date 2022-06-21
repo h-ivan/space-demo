@@ -205,7 +205,7 @@ body {
   display: flex;
   height: 100%;
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .nav-logo-menu {
     width: 100%;
   }
@@ -213,19 +213,19 @@ body {
 
 .nav-content {
   display: flex;
-  column-gap: 50px;
+  column-gap: 30px;
   padding: 0 30px;
 }
 @media (max-width: 700px) {
   .nav-content {
-    column-gap: 20px;
+    column-gap: 10px;
     padding: 0 10px;
   }
   .nav-content span {
     display: none !important;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .nav-content {
     display: none;
   }
@@ -235,7 +235,7 @@ body {
   display: none;
   cursor: pointer;
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .menu-icon {
     display: block;
   }
@@ -259,7 +259,7 @@ body {
   display: none;
   cursor: pointer;
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .menu-icon {
     display: block;
   }
@@ -367,7 +367,7 @@ body {
   background-color: white;
   border-radius: 50%;
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .logo-bg {
     transform: scale(0.8);
   }
@@ -391,6 +391,16 @@ body {
 
 .bg-destination {
   background: #0B0D17 url("../img/destination-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.bg-technology {
+  background: #0B0D17 url("../img/technology-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.bg-about {
+  background: #0B0D17 url("../img/about-bg.jpg") no-repeat;
   background-size: cover;
 }
 

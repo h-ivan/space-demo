@@ -7,7 +7,7 @@ import {useEffect} from "react";
 function Navbar() {
 
     useEffect(() => {
-        const menuClose = window.matchMedia("(min-width: 450px)");
+        const menuClose = window.matchMedia("(min-width: 550px)");
         const menuToggle = document.getElementById('menu-toggle');
         const menuItem = document.querySelectorAll('.nav-item');
 
@@ -48,16 +48,16 @@ function Navbar() {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="hover-underline-animation" href="#">
+                            <NavLink className="hover-underline-animation" to="/technology/launch-vehicle">
                                 <span>02</span>
-                                crew
-                            </a>
+                                technology
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="hover-underline-animation" href="#">
+                            <NavLink className="hover-underline-animation" to="/about">
                                 <span>03</span>
-                                technology
-                            </a>
+                                about this project
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

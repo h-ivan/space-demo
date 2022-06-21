@@ -194,25 +194,25 @@ $white-color: #FFFFFF;
   display: flex;
   height: 100%;
 
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     width: 100%;
   }
 }
 
 .nav-content {
   display: flex;
-  column-gap: 50px;
+  column-gap: 30px;
   padding: 0 30px;
 
   @media (max-width: 700px) {
-    column-gap: 20px;
+    column-gap: 10px;
     padding: 0 10px;
     span {
       display: none !important;
     }
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     display: none;
   }
 }
@@ -220,7 +220,7 @@ $white-color: #FFFFFF;
 .menu-icon {
   display: none;
   cursor: pointer;
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     display: block;
   }
 }
@@ -242,7 +242,7 @@ $white-color: #FFFFFF;
 .menu-icon {
   display: none;
   cursor: pointer;
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     display: block;
   }
 }
@@ -359,7 +359,7 @@ $white-color: #FFFFFF;
   background-color: white;
   border-radius: 50%;
 
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     transform: scale(0.8);
   }
 }
@@ -383,7 +383,16 @@ $white-color: #FFFFFF;
 .bg-destination {
   background: #0B0D17 url("../img/destination-bg.jpg") no-repeat;
   background-size: cover;
+}
 
+.bg-technology {
+  background: #0B0D17 url("../img/technology-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.bg-about {
+  background: #0B0D17 url("../img/about-bg.jpg") no-repeat;
+  background-size: cover;
 }
 
 .hero-container {
