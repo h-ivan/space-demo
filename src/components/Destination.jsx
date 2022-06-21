@@ -18,7 +18,7 @@ function Destination() {
         <div>
             <div className="bg-image bg-destination kenburns-bottom-right"/>
             <div className="destination-wrapper">
-                <div>
+                <div className="destination-planet-container">
                     <div className="heading-5 destination-title">
                         <span className="destination-heading-span">01</span> Pick your destination
                     </div>
@@ -27,7 +27,7 @@ function Destination() {
                 </div>
                 <div className="planet-content">
                     <div className="planet-menu">
-                        <ul className="nav-content">
+                        <ul className="planet-nav-content">
                             {planetLinks}
                         </ul>
                     </div>

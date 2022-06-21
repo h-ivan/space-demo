@@ -92,10 +92,40 @@ body {
   color: #FFFFFF;
   margin-bottom: 100px;
 }
+@media (max-width: 940px) {
+  .destination-title {
+    margin-bottom: 60px;
+  }
+}
 
 .destination-heading-span {
   opacity: 0.25;
   margin-right: 20px;
+}
+
+@media (max-width: 940px) {
+  .destination-planet-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 940px) {
+  .planet-img {
+    display: block;
+    margin: 0 auto 50px auto;
+  }
+}
+@media (max-width: 540px) {
+  .planet-img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 440px) {
+  .planet-img {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 .subheading-1 {
@@ -104,6 +134,12 @@ body {
   line-height: 32px;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  .subheading-1 {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 .subheading-2 {
@@ -186,12 +222,36 @@ body {
     padding: 0 10px;
   }
   .nav-content span {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 450px) {
   .nav-content {
     display: none;
+  }
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+.planet-nav-content {
+  display: flex;
+  gap: 50px;
+  padding: 0 30px;
+}
+@media (max-width: 940px) {
+  .planet-nav-content {
+    margin: 0 auto;
+    max-width: 210px;
+    padding: 0 10px;
+    gap: 25px;
   }
 }
 
@@ -241,7 +301,7 @@ body {
   margin-bottom: 30px;
 }
 .menu-toggle:checked ~ .nav-container .nav-item span {
-  display: inline-block;
+  display: inline-block !important;
 }
 .menu-toggle:checked ~ .nav-container .close-icon {
   display: block;
@@ -274,6 +334,7 @@ body {
 .nav-item span {
   margin-right: 5px;
   font-weight: 700;
+  display: inline-block;
 }
 
 .hover-underline-animation {
@@ -353,7 +414,18 @@ body {
 }
 
 .planet-content {
-  width: 500px;
+  max-width: 500px;
+}
+@media (max-width: 940px) {
+  .planet-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 940px) {
+  .planet-menu {
+    margin-bottom: 20px;
+  }
 }
 
 .hero-wrapper {
@@ -373,13 +445,15 @@ body {
 .destination-wrapper {
   max-width: 1400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 80px auto 0 auto;
+  gap: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   .destination-wrapper {
     flex-direction: column;
-    margin: 100px auto 0 auto;
+    margin: 40px auto 0 auto;
+    align-items: center;
   }
 }
 
@@ -457,10 +531,34 @@ body {
 .planet {
   text-transform: uppercase;
 }
+@media (max-width: 1250px) {
+  .planet {
+    font-size: 130px;
+    line-height: 140px;
+  }
+}
+@media (max-width: 1000px) {
+  .planet {
+    font-size: 110px;
+    line-height: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .planet {
+    font-size: 74px;
+    line-height: 100px;
+  }
+}
 
 .planet-details-container {
   display: flex;
   gap: 80px;
+}
+@media (max-width: 940px) {
+  .planet-details-container {
+    gap: 0;
+    justify-content: space-around;
+  }
 }
 
 .scale-up-center {

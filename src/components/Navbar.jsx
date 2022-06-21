@@ -22,7 +22,7 @@ function Navbar() {
     }, []);
 
     return (
-        <div>
+        <>
             <input id="menu-toggle" type="checkbox" className="menu-toggle"></input>
             <div className="nav-container container">
                 <div className="nav-wrapper">
@@ -62,7 +62,7 @@ function Navbar() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
