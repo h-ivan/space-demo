@@ -211,6 +211,8 @@ $white-color: #FFFFFF;
   height: 96px;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81px);
+  -webkit-backdrop-filter: blur(2px) contrast(60%);
+  -webkit-overflow-scrolling: touch;
   border-radius: 17px;
 
   @media (max-width: 450px) {

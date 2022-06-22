@@ -24,7 +24,7 @@ function Navbar() {
     return (
         <>
             <input id="menu-toggle" type="checkbox" className="menu-toggle"></input>
-            <div className="nav-container container">
+            <div id="overlay" className="nav-container container">
                 <div className="nav-wrapper">
                     <div className="nav-logo-menu">
                         <div className="logo-bg">
