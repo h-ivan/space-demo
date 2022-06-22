@@ -56,7 +56,7 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink className="hover-underline-animation" to="/about">
                                 <span>03</span>
-                                about this project
+                                about this demo
                             </NavLink>
                         </li>
                     </ul>

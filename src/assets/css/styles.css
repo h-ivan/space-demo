@@ -704,6 +704,46 @@ body {
   }
 }
 
+.not-found {
+  color: #FFFFFF;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 500px);
+}
+
+.about-container {
+  color: #FFFFFF;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+}
+
+.about-link {
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 14px;
+  font-size: 28px;
+}
+
+.about-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.about-title {
+  margin: 40px 0 10px 0;
+  color: #D0D6F9;
+}
+
 .scale-up-center {
   animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
