@@ -31,10 +31,10 @@
 }
 
 .bg-home {
-  background: #0B0D17 url("./src/assets/img/space-bg-image.jpg") no-repeat;
+  background: #0B0D17 url("../../../assets/img/space-bg-image.jpg") no-repeat;
 
   @media (max-width: 768px) {
-    background: #0B0D17 url("./src/assets/img/space-bg-image-sm.jpg") no-repeat bottom;
+    background: #0B0D17 url("../../../assets/img/space-bg-image-sm.jpg") no-repeat bottom;
   }
 
 }
