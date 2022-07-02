@@ -1,0 +1,18 @@
+@import "./src/Variables";
+
+.bg-notfound {
+  background: #0B0D17 url("../src/assets/img/about-bg.jpg") no-repeat;
+}
+
+.not-found {
+  color: $white-color;
+  max-width: 1400px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 500px);
+}
+
+.not-found-content {
+  margin: 0 auto;
+}

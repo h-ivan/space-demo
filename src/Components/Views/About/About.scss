@@ -1,0 +1,37 @@
+@import "./src/Variables";
+
+.bg-about {
+  background: #0B0D17 url("../src/assets/img/about-bg.jpg") no-repeat;
+}
+
+.about-container {
+  color: $white-color;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-title {
+  margin: 40px 0 10px 0;
+  color: $primary-color;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+}
+
+.about-link {
+  color: $white-color;
+  display: block;
+  margin-bottom: 14px;
+  font-size: 28px;
+}
+
+.about-link:hover {
+  color: rgba(255,255,255, 0.75);
+}

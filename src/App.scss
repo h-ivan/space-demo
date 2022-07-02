@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+@import "Variables";
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  height: 100%;
+}
+
+
+.container {
+  max-width: 1430px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-wrapper {
+  padding: 0 30px;
+
+  @media (max-width: 375px) {
+    padding: 0 20px;
+  }
+}
+
+.content-wrapper {
+  padding: 0 150px 0 150px;
+
+  @media (max-width: 1160px) {
+    padding: 0 40px 0 40px;
+  }
+
+  @media (max-width: 864px) {
+    padding: 0;
+  }
+}
+
+.heading-1 {
+  font-family: 'Bellefair', serif;
+  font-size: 150px;
+  line-height: 172px;
+  text-transform: uppercase;
+  color: $white-color;
+
+  @media (max-width: 500px) {
+    line-height: 150px;
+    font-size: 130px;
+  }
+
+  @media (max-width: 450px) {
+    line-height: 130px;
+    font-size: 110px;
+  }
+
+  @media (max-width: 375px) {
+    line-height: 110px;
+    font-size: 80px;
+  }
+}
+
+.heading-2 {
+  font-family: 'Bellefair', serif;
+  font-size: 100px;
+  line-height: 115px;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.heading-3 {
+  font-family: 'Bellefair', serif;
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: $white-color;
+  margin: 10px 0 20px 0;
+  @media (max-width: 375px) {
+    font-size: 46px;
+    line-height: 54px;
+  }
+}
+
+.heading-4 {
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.heading-5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: $primary-color;
+
+  @media (max-width: 375px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.heading-span {
+  opacity: 0.25;
+  margin-right: 20px;
+}
+
+.destination-container {
+  @media (max-width: 940px) {
+    width: 100%;
+  }
+}
+
+.body-text {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: $primary-color;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+}
+
+.subheading-1 {
+  font-family: 'Bellefair', serif;
+  font-size: 28px;
+  line-height: 32px;
+  color: $white-color;
+  text-transform: uppercase;
+  @media (max-width: 500px) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+.subheading-2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.36px;
+  text-transform: uppercase;
+  color: $primary-color;
+  margin-bottom: 12px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav-item {
+  position: relative;
+  list-style: none;
+  text-transform: uppercase;
+  color: $white-color;
+  font-weight: 400;
+
+  a {
+    color: $white-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $primary-color;
+  }
+
+  a:hover ~ div {
+    display: block;
+  }
+
+  span {
+    margin-right: 5px;
+    font-weight: 700;
+    display: inline-block;
+  }
+}
+
+
+.bg-image {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  animation: kenburns-bottom-right 10s ease-out both;
+
+}
+
+.kenburns-bottom-right {
+  animation: kenburns-bottom-right 10s ease-out both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes kenburns-bottom-right {
+  0% {
+    transform: scale(1) translate(0, 0);
+    transform-origin: 84% 84%;
+  }
+  100% {
+    transform: scale(1.1) translate(20px, 15px);
+    transform-origin: right bottom;
+  }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: $primary-color;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: $primary-color;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

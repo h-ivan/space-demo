@@ -1,5 +1,6 @@
 import {NavLink, useParams} from "react-router-dom";
-import technology from '../technology.json';
+import './Technology.scss';
+import technology from '../../../technology.json';
 import {useEffect, useState} from "react";
 
 function Technology() {
@@ -11,7 +12,7 @@ function Technology() {
 
     const techLinks = technology.map((e) => (
         <li key={e.id} className="nav-item">
-            <NavLink className={({ isActive }) =>
+            <NavLink className={({isActive}) =>
                 (isActive ? "explore-tech active-tech" : "explore-tech")}
                      to={`/technology/${e.url}`}>
                 <span>{e.id}</span>
@@ -26,39 +27,37 @@ function Technology() {
         window.addEventListener('resize', handleWindowResize);
         return () => {
             window.removeEventListener('resize', handleWindowResize);
-        }
+        };
     }, []);
 
     function getImageUrl(img) {
-        return new URL(`../assets/img/${img+imageUrl}.jpg`, import.meta.url).href;
+        return new URL(`../../../assets/img/${img + imageUrl}.jpg`, import.meta.url).href;
     }
 
     return (
         <div>
-            <div className="bg-image bg-technology kenburns-bottom-right"/>
+            <div className="bg-image bg-technology"/>
             <div className="heading-5 tech-title">
-                <span className="destination-heading-span">02</span> space launch 101
+                <span className="heading-span">02</span> space launch 101
             </div>
             <div className="tech-wrapper">
-                <div className="destination-planet-container">
-                    <div className="tech-container">
-                        <div>
-                            <ul className="tech-nav-content">
-                                {techLinks}
-                            </ul>
-                        </div>
-                        <div>
-                            <div className="body-text-condensed">THE TERMINOLOGY…</div>
-                            <div className="heading-3">{tech.title}</div>
-                            <div className="body-text">
-                                {tech.description}
-                            </div>
+                <div className="tech-container">
+                    <div>
+                        <ul className="tech-nav-content">
+                            {techLinks}
+                        </ul>
+                    </div>
+                    <div>
+                        <div className="body-text-condensed">THE TERMINOLOGY…</div>
+                        <div className="heading-3">{tech.title}</div>
+                        <div className="body-text">
+                            {tech.description}
                         </div>
                     </div>
                 </div>
                 <div className="tech-content">
                     <img className="tech-img" src={getImageUrl(tech.img)} width="515" height="527"
-                         alt="moon"></img>
+                         alt={tech.title}></img>
                 </div>
             </div>
         </div>

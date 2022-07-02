@@ -1,7 +1,9 @@
+import './About.scss'
+
 function About() {
     return (
         <div>
-            <div className="bg-image bg-about kenburns-bottom-right"/>
+            <div className="bg-image bg-about"/>
             <div className="about-container">
                 <p className="about-title">
                     This demo was created by Iván Herman using:
@@ -27,7 +29,7 @@ function About() {
                     </a>
                     <p className="about-title">Contact:</p>
                     <a target="_blank" className="about-link" href="mailto:ivan.herman77@gmail.com">ivan.herman77@gmail.com</a>
-                    <a target="_blank" className="about-link" href="https://www.linkedin.com/in/ivan-herman/">Linkedin</a>
+                    <a target="_blank" className="about-link" href="src/Components/Views/About/About.jsx">Linkedin</a>
                 </div>
             </div>
         </div>

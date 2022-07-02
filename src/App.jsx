@@ -1,12 +1,13 @@
-import './assets/css/styles.css';
-import Home from './components/Home.jsx';
-import Navbar from './components/Navbar.jsx';
-import Destination from './components/Destination.jsx';
-import Technology from './components/Technology.jsx';
-import About from './components/About.jsx';
-import NotFound from "./components/NotFound.jsx";
+import Home from './Components/Views/Home/Home.jsx';
+import Navbar from './Components/Shared/Navbar/Navbar.jsx';
+import Destination from './Components/Views/Destination/Destination.jsx';
+import Technology from './Components/Views/Technology/Technology.jsx';
+import About from './Components/Views/About/About.jsx';
+import NotFound from "./Components/Views/NotFound/NotFound.jsx";
+import './App.scss';
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import {useEffect} from "react";
+
 
 export default function App() {
 

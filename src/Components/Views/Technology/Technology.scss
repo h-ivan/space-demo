@@ -1,0 +1,129 @@
+@import "./src/Variables";
+
+.explore-tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid rgba(255,255,255, 0.25);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  line-height: 37px;
+
+  @media (max-width: 500px) {
+    width: 60px;
+    height: 60px;
+  }
+
+  span {
+    color: $white-color;
+    margin: 0;
+  }
+}
+
+.active-tech {
+  background: $white-color;
+  span {
+    color: $black-color;
+  }
+}
+
+.explore-tech:hover {
+  background: $white-color;
+  span {
+    color: $black-color;
+  }
+}
+
+
+.bg-technology {
+  background: #0B0D17 url("../src/assets/img/technology-bg.jpg") no-repeat;
+}
+
+.tech-title {
+  max-width: 1400px;
+  margin: 80px auto 80px auto;
+  padding-left: 20px;
+  color: $white-color;
+  @media (max-width: 940px) {
+    margin: 40px auto 20px auto;
+  }
+}
+
+.tech-wrapper {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-around;
+  margin: 80px auto 0 auto;
+  gap: 20px;
+
+  @media (max-width: 940px) {
+    flex-direction: column-reverse;
+    margin: 40px auto 0 auto;
+    align-items: center;
+  }
+}
+
+
+.tech-container {
+  display: flex;
+  @media (max-width: 940px) {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.tech-nav-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 30px;
+
+  @media (max-width: 940px) {
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0 auto 40px auto;
+    max-width: 250px;
+    padding: 0;
+    gap: 25px;
+  }
+
+}
+
+.body-text-condensed {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2.7px;
+  color: $primary-color;
+
+}
+
+.tech-content {
+  max-width: 500px;
+  @media (max-width: 940px) {
+    text-align: center;
+    max-width: 100%;
+  }
+
+}
+
+.tech-img {
+
+  @media (max-width: 1200px) {
+    width: 415px;
+    height: 427px;
+  }
+
+  @media (max-width: 940px) {
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 100%;
+  }
+
+}

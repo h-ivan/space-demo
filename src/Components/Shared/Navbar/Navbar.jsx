@@ -1,10 +1,15 @@
-import {ReactComponent as Logo} from '../assets/img/logo.svg'
-import {ReactComponent as MenuIcon} from '../assets/img/hamburger-icon.svg'
-import {ReactComponent as CloseIcon} from '../assets/img/close-icon.svg'
+import {ReactComponent as Logo} from '../../../assets/img/logo.svg'
+import {ReactComponent as MenuIcon} from '../../../assets/img/hamburger-icon.svg'
+import {ReactComponent as CloseIcon} from '../../../assets/img/close-icon.svg'
 import {NavLink} from "react-router-dom";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
+import './Navbar.scss'
 
 function Navbar() {
+
+    const [open, setOpen] = useState(false)
+
+    const toggleMenu = () => setOpen(!open)
 
     useEffect(() => {
         const menuClose = window.matchMedia("(min-width: 550px)");

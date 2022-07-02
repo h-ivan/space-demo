@@ -1,0 +1,90 @@
+@import "./src/Variables";
+
+.hero-wrapper {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 250px auto 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 100px auto 0 auto;
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  max-width: 380px;
+
+  @media (max-width: 768px) {
+    max-width: 450px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 500px) {
+    row-gap: 10px;
+  }
+}
+
+.bg-home {
+  background: #0B0D17 url("../src/assets/img/space-bg-image.jpg") no-repeat;
+
+  @media (max-width: 768px) {
+    background: #0B0D17 url("../src/assets/img/space-bg-image-sm.jpg") no-repeat bottom;
+  }
+
+}
+
+.space {
+  margin-left: -10px;
+}
+
+.explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: $white-color;
+  text-transform: uppercase;
+  border-radius: 50%;
+  width: 274px;
+  height: 274px;
+
+  @media (max-width: 375px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.explore:hover > .explore-hover {
+  display: block;
+}
+
+.explore-hover {
+  display: none;
+  position: absolute;
+  background: $white-color;
+  opacity: 0.1;
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+
+  @media (max-width: 375px) {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.scale-up-center {
+  animation: scale-up-center 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.explore-text {
+  color: $black-color !important;
+  position: absolute;
+  text-decoration: none;
+}
