@@ -5,25 +5,8 @@ function About() {
         <div>
             <div className="bg-image bg-about"/>
             <div className="about-container">
-                <p className="about-title">
-                    This demo was created by Iván Herman using:
-                </p>
                 <div>
-                    <ul className="about-list">
-                        <li>
-                            React Js
-                        </li>
-                        <li>
-                            Vite
-                        </li>
-                        <li>
-                            React Router
-                        </li>
-                        <li>
-                            Sass
-                        </li>
-                    </ul>
-                    <p className="about-title">Based on Frontend Mentor challenge:</p>
+                    <p className="about-title">React.js Demo based on Frontend Mentor challenge:</p>
                     <a target="_blank" className="about-link" href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">
                         Space tourism multi-page website
                     </a>
